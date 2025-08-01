@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   knotName: Knot Name
   knotCombination:
-  - w
-  - a
-  - s
-  - d
+  - up
+  - down
+  - left
+  - right
