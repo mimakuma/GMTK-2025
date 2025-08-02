@@ -1,17 +1,16 @@
 using NUnit.Framework;
 using UnityEngine;
-using UnityEngine.Events;
+using System.Collections.Generic;
 using UnityEngine.UI;
 using TMPro;
-using System.Collections.Generic;
 using DG.Tweening;
-using UnityEngine.SocialPlatforms.Impl;
 using System.Collections;
-using static UnityEngine.Rendering.DebugUI;
-using Button = UnityEngine.UI.Button;
 
-public class LevelLogic : MonoBehaviour
+public class BossLevelLogic : MonoBehaviour
 {
+    public List<Knot> allKnots;
+    public List<Knot> randomlyPickedKnots;
+
     [Header("Knot Used in this Level")]
     public Knot knot;
     public Button nextLevelToUnlock;
@@ -47,6 +46,11 @@ public class LevelLogic : MonoBehaviour
     public float timeToCompleteKnot = 30f;
     private float currentTime;
 
+    [Header("Fade Settings")]
+    public List<Image> keyCovers;
+    public float fadeDuration = 1f;
+    public Ease fadeEase = Ease.InOutQuad;
+
     [Header("Audio Settings")]
     public AudioSource audiosoure;
     public AudioClip minigameMistake;
@@ -67,9 +71,86 @@ public class LevelLogic : MonoBehaviour
     public GameObject buttonsHolder;
     public List<GameObject> buttonsCombination;
 
+    private bool countdownShown = false;
+
+    void FadeOutImages()
+    {
+        ResetKeyCoversAlpha();
+
+        for (int i = 0; i < keyCovers.Count; i++)
+        {
+            Image img = keyCovers[i];
+            img.DOFade(1f, fadeDuration).SetEase(fadeEase).SetDelay(0.5f);
+        }
+    }
+
+    void ResetKeyCoversAlpha()
+    {
+        foreach (Image img in keyCovers)
+        {
+            Color c = img.color;
+            c.a = 0f;
+            img.color = c;
+        }
+    }
+
+    void PickRandomKnotsFromPool()
+    {
+        randomlyPickedKnots.Clear();
+
+        if (allKnots.Count < 5)
+        {
+            Debug.LogWarning("Not enough objects in source list to pick 5 unique ones.");
+            return;
+        }
+
+        List<Knot> tempList = new List<Knot>(allKnots);
+
+        for (int i = 0; i < 5; i++)
+        {
+            int index = Random.Range(0, tempList.Count);
+            randomlyPickedKnots.Add(tempList[index]);
+            tempList.RemoveAt(index);
+        }
+    }
+
+    void LoadNextKnot()
+    {
+        if (randomlyPickedKnots.Count == 0)
+        {
+            FinalizeVictory();
+            return;
+        }
+
+        knot = randomlyPickedKnots[0];
+        randomlyPickedKnots.RemoveAt(0);
+
+        currentKnotImageIndex = 0;
+        knotImage.sprite = knot.knotImages[0];
+
+        SetAmountOfKeys();
+        buttonsHolder.SetActive(true);
+        tightenLoopUIHolder.SetActive(false);
+        readyToTightenLoop = false;
+        currentPullAttempts = 0;
+
+        // Only freeze timer if we're about to show countdown
+        if (!countdownShown)
+        {
+            canStartTimer = false;
+            StartLevelCountdown();
+            countdownShown = true;
+        }
+        else
+        {
+            // Continue running timer between knots without countdown
+            canStartTimer = true;
+            FadeOutImages();
+        }
+    }
+
     void Update()
     {
-        // Timer
         if (canStartTimer)
         {
             if (isTimeUp || currentTime <= 0f)
@@ -86,7 +167,6 @@ public class LevelLogic : MonoBehaviour
             }
         }
 
-        // Mid-Mini Game
         if (!isTimeUp && !readyToTightenLoop)
         {
             if (buttonsCombination.Count == 0)
@@ -110,8 +190,8 @@ public class LevelLogic : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                currentPullAttempts = currentPullAttempts + 1;
-                CheckIfPlayerWonLevel();
+                currentPullAttempts++;
+                CheckIfCurrentKnotComplete();
             }
         }
     }
@@ -120,7 +200,7 @@ public class LevelLogic : MonoBehaviour
     {
         isTimeUp = false;
         currentTime = timeToCompleteKnot;
-        timer.fillAmount = 1f;
+        //timer.fillAmount = 1f;
         canStartTimer = true;
     }
 
@@ -130,8 +210,8 @@ public class LevelLogic : MonoBehaviour
             return;
 
         GameObject firstButton = buttonsCombination[0];
-
         RequiredKey keyComponent = firstButton.GetComponent<RequiredKey>();
+
         if (keyComponent == null)
         {
             Debug.LogWarning("Missing RequiredKey component on button.");
@@ -140,11 +220,9 @@ public class LevelLogic : MonoBehaviour
 
         if (keyComponent.requiredKey == inputKey)
         {
-            // CORRECT INPUT
             firstButton.SetActive(false);
             buttonsCombination.RemoveAt(0);
 
-            // Advance to next sprite if possible
             currentKnotImageIndex++;
             if (currentKnotImageIndex < knot.knotImages.Count)
             {
@@ -159,11 +237,11 @@ public class LevelLogic : MonoBehaviour
         }
         else
         {
-            // INCORRECT INPUT
             audiosoure.PlayOneShot(minigameMistake);
             SetAmountOfKeys();
             currentKnotImageIndex = 0;
             knotImage.sprite = knot.knotImages[0];
+            FadeOutImages();
             if (!madeMistake) madeMistake = true;
         }
     }
@@ -178,50 +256,50 @@ public class LevelLogic : MonoBehaviour
         }
     }
 
-    void CheckIfPlayerWonLevel()
+    void CheckIfCurrentKnotComplete()
     {
         if (currentPullAttempts >= requiredPullAttempts)
         {
-            isTimeUp = true;
-
-            audiosoure.PlayOneShot(minigameWin);
-            currentPullAttempts = requiredPullAttempts;
-            knotImage.sprite = knot.knotDoneImage;
             tightenLoopUIHolder.SetActive(false);
-
-            if (timer.fillAmount >= 0.5f) { finishedLoopQuickly = true; }
-
-            // Calculate Score
-            if (finishedLoopQuickly && !madeMistake)
-            {
-                starScore = 3;
-                AnimateStars(3);
-            }
-            else if ((!finishedLoopQuickly && !madeMistake) || (finishedLoopQuickly && madeMistake))
-            {
-                starScore = 2;
-                AnimateStars(2);
-            }
-            else if (!finishedLoopQuickly && madeMistake)
-            {
-                starScore = 1;
-                AnimateStars(1);
-            }
-
-            if (starScore >= highestScore)
-            {
-                highestScore = starScore;
-                levelStar1.SetActive(highestScore >= 1);
-                levelStar2.SetActive(highestScore >= 2);
-                levelStar3.SetActive(highestScore == 3);
-            }
-
-            if (nextLevelToUnlock != null) nextLevelToUnlock.interactable = true;
-
-            gameStateWindow.SetActive(true);
-            gameStateTitle.text = "Great work! You tied the loop!";
-            Debug.Log("YOU WON!");
+            LoadNextKnot();
         }
+    }
+
+    void FinalizeVictory()
+    {
+        isTimeUp = true;
+        audiosoure.PlayOneShot(minigameWin);
+        if (timer.fillAmount >= 0.5f) finishedLoopQuickly = true;
+
+        if (finishedLoopQuickly && !madeMistake)
+        {
+            starScore = 3;
+            AnimateStars(3);
+        }
+        else if ((!finishedLoopQuickly && !madeMistake) || (finishedLoopQuickly && madeMistake))
+        {
+            starScore = 2;
+            AnimateStars(2);
+        }
+        else if (!finishedLoopQuickly && madeMistake)
+        {
+            starScore = 1;
+            AnimateStars(1);
+        }
+
+        if (starScore >= highestScore)
+        {
+            highestScore = starScore;
+            levelStar1.SetActive(highestScore >= 1);
+            levelStar2.SetActive(highestScore >= 2);
+            levelStar3.SetActive(highestScore == 3);
+        }
+
+        if (nextLevelToUnlock != null) nextLevelToUnlock.interactable = true;
+
+        gameStateWindow.SetActive(true);
+        gameStateTitle.text = "Great work! You tied all loops!";
+        Debug.Log("YOU WON!");
     }
 
     void AnimateStars(int count)
@@ -255,28 +333,25 @@ public class LevelLogic : MonoBehaviour
 
     public void RestartLevel()
     {
-        currentKnotImageIndex = 0; // <-- Fix: Reset the image index
-        knotImage.sprite = knot.knotImages[0];
-
-        SetAmountOfKeys();
-        buttonsHolder.SetActive(true);
-        tightenLoopUIHolder.SetActive(false);
+        ResetKeyCoversAlpha();
+        countdownShown = false;
+        PickRandomKnotsFromPool();
+        currentTime = timeToCompleteKnot;
+        timer.fillAmount = 1;
+        isTimeUp = false;
+        madeMistake = false;
+        finishedLoopQuickly = false;
         gameStateWindow.SetActive(false);
         buttonsHolder.transform.localScale = Vector3.zero;
-
-        currentPullAttempts = 0;
-        timer.fillAmount = 1;
-        readyToTightenLoop = false;
         canStartTimer = false;
-
-        finishedLoopQuickly = false;
-        madeMistake = false;
-
+        LoadNextKnot();
         StartLevelCountdown();
     }
 
     public void StartLevelCountdown()
     {
+        if (countdownShown) return;
+        countdownShown = true;
         StartCoroutine(CountdownCoroutine());
     }
 
@@ -284,12 +359,14 @@ public class LevelLogic : MonoBehaviour
     {
         string[] countdownValues = { "3", "2", "1", "GO!" };
 
+        countdownText.gameObject.SetActive(true);
+        countdownText.transform.localScale = Vector3.zero;
+
         foreach (string value in countdownValues)
         {
-            countdownText.transform.localScale = Vector3.zero;
             countdownText.text = value;
-            countdownText.transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBounce);
-
+            countdownText.transform.localScale = Vector3.zero;
+            countdownText.transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack);
             yield return new WaitForSeconds(1f);
 
             if (countdownText.text == "1")
@@ -298,8 +375,11 @@ public class LevelLogic : MonoBehaviour
             }
         }
 
-        countdownText.transform.localScale = Vector3.zero;
+        countdownText.transform.DOScale(Vector3.zero, 0.2f).SetEase(Ease.InBack);
+        yield return new WaitForSeconds(0.25f);
+
         StartTimer();
+        FadeOutImages();
     }
 
     void SetAmountOfKeys()
@@ -323,8 +403,8 @@ public class LevelLogic : MonoBehaviour
             if (shouldBeActive)
             {
                 buttonsCombination.Add(child);
-
                 RequiredKey keyComponent = child.GetComponent<RequiredKey>();
+
                 if (keyComponent != null)
                 {
                     keyComponent.requiredKey = knot.knotCombination[i];

@@ -7,4 +7,6 @@ public class Knot : ScriptableObject
 {
     public string knotName;
     public List<string> knotCombination;
+    public List<Sprite> knotImages;
+    public Sprite knotDoneImage;
 }
