@@ -7,9 +7,4 @@ public class Knot : ScriptableObject
 {
     public string knotName;
     public List<string> knotCombination;
-
-    public void UpdateKnotCombination()
-    {
-
-    }
 }
