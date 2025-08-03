@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0f30124024f7e8641a7dbf8c854a8608
+guid: b05992cbc0b967b4ba1fbaf93600526e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -108,12 +108,56 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: CelticKnot_3_0
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 723
+        width: 1610
+        height: 620
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f15ed13820f717c449aef64748baefc0
+      internalID: -1273126351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CelticKnot_3_1
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 100
+        width: 1610
+        height: 620
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5cbda5be7dad1c4fa99d2fcb8b34042
+      internalID: -1701955456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 92b54d7c63fcb934a97fb2614707a3cd
     internalID: 0
     vertices: []
     indices: 
@@ -122,7 +166,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CelticKnot_3_0: -1273126351
+      CelticKnot_3_1: -1701955456
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
