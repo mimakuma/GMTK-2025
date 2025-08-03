@@ -32,6 +32,7 @@ public class LevelLogic : MonoBehaviour
     public Sprite levelStar1;
     public Sprite levelStar2;
     public Sprite levelStar3;
+    public Sprite unlockLevel;
 
     [Header("Countdown")]
     public TextMeshProUGUI countdownText;
@@ -219,7 +220,11 @@ public class LevelLogic : MonoBehaviour
 
             levelMapIcon.gameObject.transform.localScale = new Vector3(1, 1, 1);
 
-            if (nextLevelToUnlock != null) nextLevelToUnlock.interactable = true;
+            if (nextLevelToUnlock != null)
+            {
+                nextLevelToUnlock.interactable = true;
+                nextLevelToUnlock.GetComponent<Image>().sprite = unlockLevel;
+            }
 
             gameStateWindow.SetActive(true);
             gameStateTitle.text = "Great work! You tied the loop!";
