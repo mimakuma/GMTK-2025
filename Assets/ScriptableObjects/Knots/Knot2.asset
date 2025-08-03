@@ -12,28 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 654d01040273d5a448a430d9dd2d8056, type: 3}
   m_Name: Knot2
   m_EditorClassIdentifier: 
-  knotName: Knot Name 2
+  knotName: Oriental Tie Knot
   knotCombination:
+  - left
+  - right
   - up
   - down
-  - up
-  - down
-  - up
-  - down
-  - up
-  - down
-  - up
   - down
   knotImages:
-  - {fileID: 21300000, guid: c2ea3a7e409d0904c8cf543e328a4e32, type: 3}
-  - {fileID: 21300000, guid: c2ea3a7e409d0904c8cf543e328a4e32, type: 3}
-  - {fileID: 21300000, guid: c2ea3a7e409d0904c8cf543e328a4e32, type: 3}
-  - {fileID: 21300000, guid: c2ea3a7e409d0904c8cf543e328a4e32, type: 3}
-  - {fileID: 21300000, guid: c2ea3a7e409d0904c8cf543e328a4e32, type: 3}
-  - {fileID: 21300000, guid: c2ea3a7e409d0904c8cf543e328a4e32, type: 3}
-  - {fileID: 21300000, guid: c2ea3a7e409d0904c8cf543e328a4e32, type: 3}
-  - {fileID: 21300000, guid: c2ea3a7e409d0904c8cf543e328a4e32, type: 3}
-  - {fileID: 21300000, guid: c2ea3a7e409d0904c8cf543e328a4e32, type: 3}
-  - {fileID: 21300000, guid: c2ea3a7e409d0904c8cf543e328a4e32, type: 3}
-  - {fileID: 21300000, guid: c2ea3a7e409d0904c8cf543e328a4e32, type: 3}
-  knotDoneImage: {fileID: 21300000, guid: 1f71ce5e1ee3f044ba0a0c5c2472f241, type: 3}
+  - {fileID: -612993675, guid: f759df63c5ae9a6429bfcd0ed7d31d1d, type: 3}
+  - {fileID: 1759957605, guid: f759df63c5ae9a6429bfcd0ed7d31d1d, type: 3}
+  - {fileID: 2095549405, guid: f759df63c5ae9a6429bfcd0ed7d31d1d, type: 3}
+  - {fileID: -615869055, guid: 471f6bdcd94a33949a6ca493f79a0af1, type: 3}
+  - {fileID: -563487406, guid: 471f6bdcd94a33949a6ca493f79a0af1, type: 3}
+  - {fileID: 278802139, guid: 471f6bdcd94a33949a6ca493f79a0af1, type: 3}
+  knotDoneImage: {fileID: 468659247, guid: 927a6bf5813adee409c48af59de4221d, type: 3}
