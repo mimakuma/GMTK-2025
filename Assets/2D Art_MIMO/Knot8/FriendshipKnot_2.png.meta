@@ -108,12 +108,78 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: FriendshipKnot_2_0
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 57
+        width: 700
+        height: 1300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99e6832f028414141ab372e1bda8705d
+      internalID: 1258396379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FriendshipKnot_2_1
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 57
+        width: 700
+        height: 1300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22607bc7c1f88be46b346c81cc44ab17
+      internalID: 708142900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FriendshipKnot_2_2
+      rect:
+        serializedVersion: 2
+        x: 1726
+        y: 57
+        width: 700
+        height: 1300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8237a3e13ac6d2f409537b5bc3ed3fd9
+      internalID: -1101145841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 0a2297f36c90c26468e7e550de4bf607
     internalID: 0
     vertices: []
     indices: 
@@ -122,7 +188,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      FriendshipKnot_2_0: 1258396379
+      FriendshipKnot_2_1: 708142900
+      FriendshipKnot_2_2: -1101145841
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
