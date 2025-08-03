@@ -81,7 +81,7 @@ public class BossLevelLogic : MonoBehaviour
         for (int i = 0; i < keyCovers.Count; i++)
         {
             Image img = keyCovers[i];
-            img.DOFade(1f, fadeDuration).SetEase(fadeEase).SetDelay(0.5f);
+            img.DOFade(1f, fadeDuration).SetEase(fadeEase).SetDelay(0f);
         }
     }
 
