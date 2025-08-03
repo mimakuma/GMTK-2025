@@ -28,9 +28,10 @@ public class LevelLogic : MonoBehaviour
     public GameObject minigameStar1;
     public GameObject minigameStar2;
     public GameObject minigameStar3;
-    public GameObject levelStar1;
-    public GameObject levelStar2;
-    public GameObject levelStar3;
+    public Image levelMapIcon;
+    public Sprite levelStar1;
+    public Sprite levelStar2;
+    public Sprite levelStar3;
 
     [Header("Countdown")]
     public TextMeshProUGUI countdownText;
@@ -208,13 +209,15 @@ public class LevelLogic : MonoBehaviour
                 AnimateStars(1);
             }
 
-            if (starScore >= highestScore)
-            {
-                highestScore = starScore;
-                levelStar1.SetActive(highestScore >= 1);
-                levelStar2.SetActive(highestScore >= 2);
-                levelStar3.SetActive(highestScore == 3);
-            }
+            highestScore = starScore;
+
+            if (highestScore == 1) levelMapIcon.sprite = levelStar1;
+
+            if (highestScore == 2) levelMapIcon.sprite = levelStar2;
+
+            if (highestScore == 3) levelMapIcon.sprite = levelStar3;
+
+            levelMapIcon.gameObject.transform.localScale = new Vector3(1, 1, 1);
 
             if (nextLevelToUnlock != null) nextLevelToUnlock.interactable = true;
 
