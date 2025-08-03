@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 959b80c1981140e4784a811b0824da1c
+guid: b95b2a4fe0d8b5347877a4d6d4702036
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FriendshipKnot_2_0
+      name: "strza\u0142ki_0"
       rect:
         serializedVersion: 2
-        x: 107
-        y: 57
-        width: 700
-        height: 1300
+        x: 1327
+        y: 520
+        width: 420
+        height: 420
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,20 +125,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99e6832f028414141ab372e1bda8705d
-      internalID: 1258396379
+      spriteID: caacc49d73269344a90dfd58291b45d2
+      internalID: 1656276995
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FriendshipKnot_2_1
+      name: "strza\u0142ki_1"
       rect:
         serializedVersion: 2
-        x: 924
-        y: 57
-        width: 700
-        height: 1300
+        x: 2126
+        y: 521
+        width: 420
+        height: 420
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,20 +147,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22607bc7c1f88be46b346c81cc44ab17
-      internalID: 708142900
+      spriteID: 646371af794bbd542b0de517c7ec1e3c
+      internalID: -749516041
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FriendshipKnot_2_2
+      name: "strza\u0142ki_2"
       rect:
         serializedVersion: 2
-        x: 1726
-        y: 57
-        width: 700
-        height: 1300
+        x: 1727
+        y: 63
+        width: 420
+        height: 420
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,8 +169,118 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8237a3e13ac6d2f409537b5bc3ed3fd9
-      internalID: -1101145841
+      spriteID: 1643861b2762c0247b589b4d825a2967
+      internalID: -1610979716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "strza\u0142ki_3"
+      rect:
+        serializedVersion: 2
+        x: 1727
+        y: 948
+        width: 420
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3a70d7e8cd6a2945bf2193895933ab2
+      internalID: 1194895323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "strza\u0142ki_4"
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 948
+        width: 420
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8caf02d8403471641a5a93120ee88a07
+      internalID: -1078370407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "strza\u0142ki_5"
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 521
+        width: 420
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd204517d968b254f90a85d6fb4297fe
+      internalID: -670278402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "strza\u0142ki_6"
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 59
+        width: 420
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35e352fbcb6aa824bbb50bd1a43c76d0
+      internalID: -75425170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "strza\u0142ki_7"
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 520
+        width: 420
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edb0eeb865d18b74a9f426c5627ef73a
+      internalID: 72668388
       vertices: []
       indices: 
       edges: []
@@ -179,7 +289,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 0a2297f36c90c26468e7e550de4bf607
+    spriteID: 1f760dd5ede29d848844f3ae61f8fc69
     internalID: 0
     vertices: []
     indices: 
@@ -189,9 +299,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      FriendshipKnot_2_0: 1258396379
-      FriendshipKnot_2_1: 708142900
-      FriendshipKnot_2_2: -1101145841
+      "strza\u0142ki_0": 1656276995
+      "strza\u0142ki_1": -749516041
+      "strza\u0142ki_2": -1610979716
+      "strza\u0142ki_3": 1194895323
+      "strza\u0142ki_4": -1078370407
+      "strza\u0142ki_5": -670278402
+      "strza\u0142ki_6": -75425170
+      "strza\u0142ki_7": 72668388
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

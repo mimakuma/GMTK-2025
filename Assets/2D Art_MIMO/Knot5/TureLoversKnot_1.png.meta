@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -54,7 +54,7 @@ TextureImporter:
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 2
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -108,12 +108,122 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: TureLoversKnot_1_0
+      rect:
+        serializedVersion: 2
+        x: 2134
+        y: 0
+        width: 420
+        height: 1400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3065190232f2cdc4997243cd69cae7b7
+      internalID: -431979681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TureLoversKnot_1_1
+      rect:
+        serializedVersion: 2
+        x: 1723
+        y: 0
+        width: 420
+        height: 1400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b59caca7d32645846ad7aa097654fa8b
+      internalID: 1835009291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TureLoversKnot_1_2
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 0
+        width: 420
+        height: 1400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1661c7ec4ebba240b7b7872ce770efa
+      internalID: -1746936666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TureLoversKnot_1_3
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 0
+        width: 520
+        height: 1400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d060b80eb82f3741b7869e37c438f4e
+      internalID: 143576692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TureLoversKnot_1_4
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 0
+        width: 520
+        height: 1400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 164d00708ff8adb458c463e7b8e43cdb
+      internalID: -144996593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 2eecc3de07995424bac20d7d0f24a4d2
     internalID: 0
     vertices: []
     indices: 
@@ -122,7 +232,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      TureLoversKnot_1_0: -431979681
+      TureLoversKnot_1_1: 1835009291
+      TureLoversKnot_1_2: -1746936666
+      TureLoversKnot_1_3: 143576692
+      TureLoversKnot_1_4: -144996593
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

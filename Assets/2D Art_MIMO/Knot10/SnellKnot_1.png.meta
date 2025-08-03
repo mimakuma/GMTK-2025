@@ -108,12 +108,56 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: SnellKnot_1_0
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 736
+        width: 2150
+        height: 670
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb930a3a74137b24d9c47e674594cb04
+      internalID: 623926257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnellKnot_1_1
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 0
+        width: 2150
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cccc9b5a89c70294785cd981422f6110
+      internalID: -2115898765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d5e52789b2df2ed40891f606f37995bc
     internalID: 0
     vertices: []
     indices: 
@@ -122,7 +166,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SnellKnot_1_0: 623926257
+      SnellKnot_1_1: -2115898765
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

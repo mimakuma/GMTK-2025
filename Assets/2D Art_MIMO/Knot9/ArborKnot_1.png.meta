@@ -108,12 +108,56 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: ArborKnot_1_0
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 830
+        width: 2150
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb390b5f7577af748b906e6f1916bd50
+      internalID: 1184809441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArborKnot_1_1
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 19
+        width: 2150
+        height: 810
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 033d992c380ab8f42bb4fd7bb9d1ff03
+      internalID: 1375645498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c09193d61a96bc841ab1d1764bfb884e
     internalID: 0
     vertices: []
     indices: 
@@ -122,7 +166,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ArborKnot_1_0: 1184809441
+      ArborKnot_1_1: 1375645498
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

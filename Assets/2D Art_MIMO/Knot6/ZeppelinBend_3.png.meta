@@ -108,12 +108,56 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: ZeppelinBend_3_0
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 736
+        width: 2250
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10c3c704160414e438701ec0ad39e7c0
+      internalID: 680489513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZeppelinBend_3_1
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 84
+        width: 2250
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc8db24685b93574eb867fa7df2a83a4
+      internalID: 1180175514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 66da3bc156b04434e8559616b8205361
     internalID: 0
     vertices: []
     indices: 
@@ -122,7 +166,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ZeppelinBend_3_0: 680489513
+      ZeppelinBend_3_1: 1180175514
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

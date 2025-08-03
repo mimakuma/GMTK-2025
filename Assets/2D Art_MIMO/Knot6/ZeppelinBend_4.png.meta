@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b229907bc12789a43b3d033c31d71f58
+guid: 8c491e933a382aa47908edb528bafcf8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -108,12 +108,56 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: ZeppelinBend_4_0
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 613
+        width: 2250
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 193a285b8f1e89a43b335ce9b3365140
+      internalID: -1547122031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZeppelinBend_4_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 12
+        width: 2250
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef1ccf84079cbf840921cc903bce981e
+      internalID: -2000583163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: dc0c2b59747e03a4d9dd8830b9935027
     internalID: 0
     vertices: []
     indices: 
@@ -122,7 +166,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ZeppelinBend_4_0: -1547122031
+      ZeppelinBend_4_1: -2000583163
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
