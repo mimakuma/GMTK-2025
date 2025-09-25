@@ -27814,11 +27814,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 899.67444, y: 70.13931}
+  scrollPos: {x: -1090.4188, y: 73.3013}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 486.6667
-  zoom: 0.99650013
+  zoom: 1
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -33261,8 +33261,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 445
   indentLevel: 0
-  storyText: Having eaten your usual 2 cheese sandwiches, you sit unbothered at the
-    end of the table. As you always do.
+  storyText: 'Having eaten your usual 2 cheese sandwiches, you sit unbothered at
+    the end of the table. '
   description: 
   character: {fileID: 2076794710}
   portrait: {fileID: 0}
@@ -40899,9 +40899,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 735
   indentLevel: 0
-  storyText: 'But definitely worth the effort!
-
-'
+  storyText: "But definitely worth the effort!\r"
   description: 
   character: {fileID: 1159164730}
   portrait: {fileID: 0}
@@ -41278,9 +41276,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 732
   indentLevel: 0
-  storyText: 'But definitely worth the effort!
-
-'
+  storyText: "But definitely worth the effort!\r"
   description: 
   character: {fileID: 1159164730}
   portrait: {fileID: 0}
@@ -43435,7 +43431,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 850
   indentLevel: 0
-  storyText: "\u201CA friend, who is a girl\u201D\u2026"
+  storyText: "\u201CA friend who is a girl\u201D\u2026"
   description: 
   character: {fileID: 1159164730}
   portrait: {fileID: 0}
@@ -47124,7 +47120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 959
   indentLevel: 0
-  storyText: You don't remember, whether it took 10 seconds or 10 minutes - but Michael
+  storyText: You don't remember whether it took 10 seconds or 10 minutes - but Michael
     is back ashore.
   description: 
   character: {fileID: 2076794710}
@@ -47727,7 +47723,7 @@ MonoBehaviour:
   itemId: 935
   indentLevel: 0
   storyText: "I don\u2019t know, Michael. You never sound like you actually like
-    anything. You\u2019re very negative. You never take initiative"
+    anything. You\u2019re very negative. You never take initiative."
   description: 
   character: {fileID: 849549119}
   portrait: {fileID: 0}
@@ -47988,7 +47984,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 970
   indentLevel: 0
-  storyText: You don't remember, whether it took 10 seconds or 10 minutes - but Michael
+  storyText: You don't remember whether it took 10 seconds or 10 minutes - but Michael
     is back ashore.
   description: 
   character: {fileID: 2076794710}

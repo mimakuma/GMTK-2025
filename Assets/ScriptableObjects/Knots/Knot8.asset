@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 654d01040273d5a448a430d9dd2d8056, type: 3}
   m_Name: Knot8
   m_EditorClassIdentifier: 
-  knotName: Knot Name 2
+  knotName: Friendship Knot
   knotCombination:
   - left
   - right
