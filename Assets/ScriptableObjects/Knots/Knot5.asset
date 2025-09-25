@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 654d01040273d5a448a430d9dd2d8056, type: 3}
   m_Name: Knot5
   m_EditorClassIdentifier: 
-  knotName: Knot Name 2
+  knotName: True Lovers Knot
   knotCombination:
   - left
   - down
@@ -21,11 +21,11 @@ MonoBehaviour:
   - right
   - down
   knotImages:
-  - {fileID: -431979681, guid: ef55a2b28f03cd74e8da3a7cf9e6e701, type: 3}
-  - {fileID: -431979681, guid: ef55a2b28f03cd74e8da3a7cf9e6e701, type: 3}
-  - {fileID: 1835009291, guid: ef55a2b28f03cd74e8da3a7cf9e6e701, type: 3}
-  - {fileID: -1746936666, guid: ef55a2b28f03cd74e8da3a7cf9e6e701, type: 3}
-  - {fileID: 143576692, guid: ef55a2b28f03cd74e8da3a7cf9e6e701, type: 3}
-  - {fileID: -144996593, guid: ef55a2b28f03cd74e8da3a7cf9e6e701, type: 3}
-  - {fileID: -144996593, guid: ef55a2b28f03cd74e8da3a7cf9e6e701, type: 3}
-  knotDoneImage: {fileID: -723286147, guid: 5e2fbf80d4f133a418973ae39819fa25, type: 3}
+  - {fileID: 21300000, guid: 2eabcabcc507e2c4f879c917dbfc6780, type: 3}
+  - {fileID: 21300000, guid: 2eabcabcc507e2c4f879c917dbfc6780, type: 3}
+  - {fileID: 21300000, guid: 3654f511393190e48b35c0ee5b35ebb4, type: 3}
+  - {fileID: 21300000, guid: 3654f511393190e48b35c0ee5b35ebb4, type: 3}
+  - {fileID: 21300000, guid: 0d0309b97e6c2b847b0d61705740701e, type: 3}
+  - {fileID: 21300000, guid: 7c8ae28359aa57b459eb9c82bfcdf678, type: 3}
+  - {fileID: 21300000, guid: 81d2c9139daa5ca42a326d6c674787f5, type: 3}
+  knotDoneImage: {fileID: 21300000, guid: b2164cc83eb092a448f62c10e0678268, type: 3}
