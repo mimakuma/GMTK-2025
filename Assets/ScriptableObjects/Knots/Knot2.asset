@@ -20,10 +20,10 @@ MonoBehaviour:
   - down
   - down
   knotImages:
-  - {fileID: -612993675, guid: f759df63c5ae9a6429bfcd0ed7d31d1d, type: 3}
-  - {fileID: 1759957605, guid: f759df63c5ae9a6429bfcd0ed7d31d1d, type: 3}
-  - {fileID: 2095549405, guid: f759df63c5ae9a6429bfcd0ed7d31d1d, type: 3}
-  - {fileID: -615869055, guid: 471f6bdcd94a33949a6ca493f79a0af1, type: 3}
-  - {fileID: -563487406, guid: 471f6bdcd94a33949a6ca493f79a0af1, type: 3}
-  - {fileID: 278802139, guid: 471f6bdcd94a33949a6ca493f79a0af1, type: 3}
-  knotDoneImage: {fileID: 468659247, guid: 927a6bf5813adee409c48af59de4221d, type: 3}
+  - {fileID: 21300000, guid: 2730bfac981dba941a364c4cd820ff76, type: 3}
+  - {fileID: 21300000, guid: c47baa6c280a68b4a852585ffbdaa5f9, type: 3}
+  - {fileID: 21300000, guid: 9d867c8b248fbce4ba71c484daa5bb68, type: 3}
+  - {fileID: 21300000, guid: bc7fbb627f3af6640981c54b3d96db5a, type: 3}
+  - {fileID: 21300000, guid: ae9afb5c982fdad42a69e1bba1ef9e3e, type: 3}
+  - {fileID: 21300000, guid: e2f8e501d3128a741a9f0a64ebf38069, type: 3}
+  knotDoneImage: {fileID: 21300000, guid: 6c533f55206c32e4988d92df113577a9, type: 3}
